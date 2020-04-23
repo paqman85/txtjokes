@@ -29,10 +29,12 @@ Launch to production from your local environment:
 <ol>
     <li>Follow the steps above to get the program working on your local computer.</li>
     <li>Start a git for the project and save it.</li>
+        ```
             git init
             git status
             git add .
             git commit -m 'txtjokes initial'
+        ```
     <li>Add the environment variables listed in docker-compose to the heroku environment variables section of your heroku app</li>
     <li>From your command line with <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI installed.</a></li>
         Here are the sequence of comands to launch the project on the free tier of heroku:
