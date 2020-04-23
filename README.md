@@ -26,15 +26,17 @@ The demo of the project will be active for a short time on <a href="txtjokes.her
 In order to launch on heroku you'll require a <a href="https://signup.heroku.com/">heroku acocunt</a>.
 
 Launch to production from your local environment:
-<ol>
+<ul>
     <li>Follow the steps above to get the program working on your local computer.</li>
     <li>Start a git for the project and save it.</li>
+</ul>
         ```
             git init
             git status
             git add .
             git commit -m 'txtjokes initial'
         ```
+<ul>
     <li>Add the environment variables listed in docker-compose to the heroku environment variables section of your heroku app</li>
     <li>From your command line with <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI installed.</a></li>
         Here are the sequence of comands to launch the project on the free tier of heroku:
@@ -54,7 +56,7 @@ Launch to production from your local environment:
             heroku open -a damp-shield-9932
         ```
     <li>Send some jokes!</li>
-</ol>
+</ul>
 
 <h3 id="other">Some Additional Notes:</h3>
 
