@@ -41,8 +41,8 @@ git commit -m 'txtjokes initial'
 
 3. Add the environment variables listed in docker-compose to the heroku environment variables section of your heroku app</li>
 4. From your command line with <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI installed.</a></li>
-    >Here are the sequence of comands to launch the project on the free tier of heroku:
-    >(Take note of the app name -- something like 'damp-shield-9932'. Add 'YOUR-HEROKU-APP-NAME.herokuapp.com' to your settings allowed host in the django project. Make sure to change the app name to whatever you generated in the previous command - do this everytime you see damp-shield-9932)
+Here are the sequence of comands to launch the project on the free tier of heroku:
+(Take note of the app name -- something like 'damp-shield-9932'. Add 'YOUR-HEROKU-APP-NAME.herokuapp.com' to your settings allowed host in the django project. Make sure to change the app name to whatever you generated in the previous command - do this everytime you see damp-shield-9932)
 
 ```
 heroku login
