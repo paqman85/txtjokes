@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+psycopg2-binary = "*"
+django-crispy-forms = "*"
+django-allauth = "*"
+twilio = "*"
+pyjokes = "*"
+django-phonenumber-field = "==4.0.0"
+phonenumbers = "*"
+sendgrid = "*"
+sendgrid-django = "*"
+gunicorn = "*"
+whitenoise = "*"
+dj-database-url = "*"
+
+[requires]
+python_version = "3.7"

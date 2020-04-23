@@ -1,0 +1,29 @@
+{% extends '_base.html'%}
+
+{% block title %}TxTJokes{% endblock title %}
+
+{% block content %}
+
+
+<div class="jumbotron">
+
+  <h1 class="display-3">TxTJokes</h1>
+    {% if user.is_authenticated %}
+  <p class="lead">Hi {{ user.email }}! Ready to send a Joke?</p>
+  <hr class="my-4">
+  <p>Ready to send some jokes?</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'sendjoke' %}" role="button">TxT Jokes!</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'account_logout' %}" role="button">Log Out</a>
+  {% else %}
+    <p class="lead">Hi new friend!</p>
+    <p class="card-text">You are not logged in</p>
+    <hr class="my-4">
+    <p>Please login or register a new account to use TxTJokes</p>
+    <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'account_login' %}" role="button">Sign in</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'account_signup' %}" role="button">Register</a>
+    </p>
+{% endif %}
+<div>
+
+{% endblock content %}

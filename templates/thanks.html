@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+
+{% block title %}Joke Sent!{% endblock title %}
+
+{% block content %}
+  <h1 class="display-3">Huzzah!</h1>
+    <p class="lead">We wanted to make you laugh, and we wanted to do it differently.</p>
+    <p class="card-text">You've brighted someone's day with a joke. Your the best.</p>
+    <hr class="my-4">
+    <p>Thank you for being super awesome.</p>
+    <p>Want to send another?</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'sendjoke' %}" role="button">Send Another!</a>
+
+{% endblock content %}
+ 

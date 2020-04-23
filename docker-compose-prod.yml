@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    command: gunicorn txtjokes.wsgi -b 0.0.0.0:8000
+
+    environment:
+      - ENVIRONMENT=production
+      - SECRET_KEY=<her_secret_key_here>
+      - DEBUG=0
+      - TWILIO_ACC_SID=<your_Twilio_acc_SID_here>
+      - TWILIO_AUTH_TOKEN=<your_twilio_auth_here>
+      - TWILIO_MSG_SERVICE_SID=<your_twilio_msg_service_SID_here>
+      - SEND_GRID_API=<your_sendgrid_api_here>
+
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+  db:
+    image: postgres:12

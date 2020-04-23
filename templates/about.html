@@ -1,0 +1,21 @@
+{% extends '_base.html'%}
+
+{% block title %}TxTJokes{% endblock title %}
+
+{% block content %}
+
+
+
+
+<div class="jumbotron">
+
+  <h1 class="display-3">About TxT Jokes</h1>
+    <p class="lead">We wanted to make you laugh, and we wanted to do it differently.</p>
+    <p class="card-text">TxTJokes is a Twilio sms example application created during the Twilio and Dev.to hackathon 2020.</p>
+    <hr class="my-4">
+    <p>Created by Glenn Paquette, Txt jokes is a Django web application which uses PyJokes, & Twilio to send you nerd jokes by sms.<br>
+    The site is styled with Bootstrap 4 and Bootswatch and is redered with Django's built in templating engine.</p>
+    <p>Further development includes schedualed joke delivery, sending gifs, expanding the joke library, and sending via alternative means - such as slack or whatsapp.<br>
+    We further would like to collect stats such as # of jokes sent, and accept feedback from recepients.</p>
+
+{% endblock content %}

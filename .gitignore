@@ -122,3 +122,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Docker files with secrets
+docker-compose-dev-1.yml
+docker-compose-prod-1.yml
