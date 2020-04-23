@@ -1,4 +1,5 @@
-# TxtJokes - A Django Twilio Application on Heroku with Docker and Pipenv
+# TxtJokes
+## A Django Twilio Application on Heroku with Docker and Pipenv
 
 This project is built with Django and Bootstrap 4. This project uses pipenv and docker as virtual environments. TxtJokes was created for the twillio hackathon and uses twillio to send sms messages, and twilio sendgrid for the authentication emails. This project hows how to use Twillio technology for a basic django application. Please feel free to expand upon the project. :)
 
