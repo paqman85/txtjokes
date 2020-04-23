@@ -28,8 +28,7 @@ In order to launch on heroku you'll require a <a href="https://signup.heroku.com
 Launch to production from your local environment:
 <ol>
     <li>Follow the steps above to get the program working on your local computer.</li>
-    <li>Start a git for the project and save it.<li>
-    
+    <li>Start a git for the project and save it.</li>
         ```
             git init
             git status
@@ -39,21 +38,22 @@ Launch to production from your local environment:
     <li>Add the environment variables listed in docker-compose to the heroku environment variables section of your heroku app</li>
     <li>From your command line with <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI installed.</a></li>
         Here are the sequence of comands to launch the project on the free tier of heroku:
-        
-            `heroku login`
-            `heroku create`  (Take note of the app name -- somthing like 'damp-shield-9932'. Add 'YOUR-HEROKU-APP-NAME.herokuapp.com' to your settings allowed host in the django project.)
-            `heroku stack:set container -a damp-shield-9932` (make sure to change the app name to whatever you generated in the previous command - do this everytime you see damp-shield-9932)
-            `heroku addons:create heroku-postgresql:hobby-dev -a damp-shield-9932`
-            `heroku git:remote -a damp-shield-9932
-            `git status`
-            `git add .`
-            `git commit -m 'txtjokes pre-deploy'`
-            `git push heroku master`
-            `heroku run python manage.py migrate`
-            `heroku run python manage.py createsuperuser`
-            `heroku open -a damp-shield-9932`
-        
-    <li>Send some jokes!
+        (Take note of the app name -- something like 'damp-shield-9932'. Add 'YOUR-HEROKU-APP-NAME.herokuapp.com' to your settings allowed host in the django project. Make sure to change the app name to whatever you generated in the previous command - do this everytime you see damp-shield-9932)
+        ```
+            heroku login
+            heroku create 
+            heroku stack:set container -a damp-shield-9932
+            heroku addons:create heroku-postgresql:hobby-dev -a damp-shield-9932
+            heroku git:remote -a damp-shield-9932
+            git status
+            git add .
+            git commit -m 'txtjokes pre-deploy'
+            git push heroku master
+            heroku run python manage.py migrate
+            heroku run python manage.py createsuperuser
+            heroku open -a damp-shield-9932
+        ```
+    <li>Send some jokes!</li>
 </ol>
 
 <h3 id="other">Some Additional Notes:</h3>
