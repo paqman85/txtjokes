@@ -1,4 +1,4 @@
-<title>TxtJokes</title>
+<h1>TxtJokes</h1>
 
 This project is built with Django and Bootstrap 4. This project uses pipenv and docker as virtual environments. TxtJokes was created for the twillio hackathon and uses twillio to send sms messages, and twilio sendgrid for the authentication emails. This project hows how to use Twillio technology for a basic django application. Please feel free to expand upon the project. :)
 
@@ -29,29 +29,30 @@ Launch to production from your local environment:
 <ol>
     <li>Follow the steps above to get the program working on your local computer.</li>
     <li>Start a git for the project and save it.<li>
-        <ul>
-            <li>git init</li>
-            <li>git status</li>
-            <li>git add .</li>
-            <li>git commit -m 'txtjokes initial'</li>
-        </ul>
+    
+        ```
+            git init
+            git status
+            git add .
+            git commit -m 'txtjokes initial'
+        ```
     <li>Add the environment variables listed in docker-compose to the heroku environment variables section of your heroku app</li>
     <li>From your command line with <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI installed.</a></li>
         Here are the sequence of comands to launch the project on the free tier of heroku:
-        <ul>
-            <li>heroku login</li>
-            <li>heroku create  (Take note of the app name -- somthing like 'damp-shield-9932'. Add 'YOUR-HEROKU-APP-NAME.herokuapp.com' to your settings allowed host in the django project.)</li>
-            <li>heroku stack:set container -a damp-shield-9932 (make sure to change the app name to whatever you generated in the previous command - do this everytime you see damp-shield-9932)</li>
-            <li>heroku addons:create heroku-postgresql:hobby-dev -a damp-shield-9932</li>
-            <li>heroku git:remote -a damp-shield-9932<li>
-            <li>git status</li>
-            <li>git add .</li>
-            <li>git commit -m 'txtjokes pre-deploy'</li>
-            <li>git push heroku master</li>
-            <li>heroku run python manage.py migrate</li>
-            <li>heroku run python manage.py createsuperuser</li>
-            <li>heroku open -a damp-shield-9932</li>
-        </ul>
+        
+            `heroku login`
+            `heroku create`  (Take note of the app name -- somthing like 'damp-shield-9932'. Add 'YOUR-HEROKU-APP-NAME.herokuapp.com' to your settings allowed host in the django project.)
+            `heroku stack:set container -a damp-shield-9932` (make sure to change the app name to whatever you generated in the previous command - do this everytime you see damp-shield-9932)
+            `heroku addons:create heroku-postgresql:hobby-dev -a damp-shield-9932`
+            `heroku git:remote -a damp-shield-9932
+            `git status`
+            `git add .`
+            `git commit -m 'txtjokes pre-deploy'`
+            `git push heroku master`
+            `heroku run python manage.py migrate`
+            `heroku run python manage.py createsuperuser`
+            `heroku open -a damp-shield-9932`
+        
     <li>Send some jokes!
 </ol>
 
