@@ -1,7 +1,7 @@
 # TxtJokes
 ## A Django Twilio Application on Heroku with Docker and Pipenv
 
-This project is built with Django and Bootstrap 4. This project uses pipenv and docker as virtual environments. TxtJokes was created for the twillio hackathon and uses twillio to send sms messages, and twilio sendgrid for the authentication emails. This project hows how to use Twillio technology for a basic django application. Please feel free to expand upon the project. :)
+This project is built with Django and Bootstrap 4. This project uses pipenv and docker as virtual environments. TxtJokes was created for the twilio hackathon and uses twilio to send sms messages, and twilio sendgrid for the authentication emails. This project hows how to use Twilio technology for a basic django application. Please feel free to expand upon the project. :)
 
 The demo of the project will be active for a short time on <a href="txtjokes.herokuapp.com">txtjokes.herokuapp.com</a>.
 
@@ -65,7 +65,7 @@ heroku open -a damp-shield-9932
 
 ### Ideas for improvements:
 
-* Txt counter to show how many jokes were sent.<
+* Txt counter to show how many jokes were sent.
 * Notification bubble to show the joke sent
 * Expanding joke library
 * Susbcription service for daily jokes
@@ -81,6 +81,6 @@ This project has everything you need for several types of spin-offs. Only some m
 * Anonymous sms service
 * Daily riddles (24 hours to solve before the anser is sent)
 * Chess by sms - learn to play blind chess with notations
-* Your idea here!</
+* Your idea here!
 
 This project was created as a one day build by Glenn Paquette, currently operating <a href="https://atomicgrowth.co">Atomic Growth</a> as a submission for the <a href="https://dev.to/t/twiliohackathon">Twilio Hackathon</a> on <a href="https://Dev.to">Dev.to</a>. Background music while coding was supplied by <a href="https://www.youtube.com/channel/UCT5RMcRGa32Th0AZ0Dxxviw">JimTV</a> - Thanks JimTV!
