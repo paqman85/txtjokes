@@ -179,6 +179,7 @@ hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
 
 ENVIRONMENT = os.environ.get('ENVIRONMENT')
 
+
 if ENVIRONMENT == 'production':
     SECURE_BROWSER_XSS_FILTER = True
     CSRF_COOKIE_SECURE = True
